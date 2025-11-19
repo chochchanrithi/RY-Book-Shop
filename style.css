@@ -1,0 +1,184 @@
+/* ការកំណត់មូលដ្ឋាន */
+body {
+    font-family: 'Khmer OS Siemreap', 'Arial', sans-serif; /* ប្រើពុម្ពអក្សរខ្មែរនិងអង់គ្លេស */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header (header) */
+header {
+    background-color: #007bff; /* ពណ៌ខៀវ */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.search-form input[type="search"], .search-form button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-form button {
+    background-color: #28a745; /* ពណ៌បៃតង */
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Navigation (nav) */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* ពណ៌លឿងនៅពេលដាក់ម៉ៅលើ */
+}
+
+/* Main Content Wrapper (main) - ប្រើ Flexbox ដើម្បីដាក់ Section និង Aside ជាប់គ្នា */
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Main Section (section) */
+.book-list {
+    flex: 4; /* យកទំហំធំជាង */
+    margin-right: 20px;
+}
+
+.book-list h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Sidebar (aside) */
+.sidebar {
+    flex: 3; /* យកទំហំតូចជាង */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 5px 0;
+}
+
+.promotion {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffe4b2; /* ពណ៌លឿងស្រាល */
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Article/Book Card (article) - ប្រើ Flexbox សម្រាប់រៀបចំ Book Card */
+.book-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex; /* ដាក់ធាតុនៅក្នុង card តាមជួរដេក */
+    flex-direction: column; /* តម្រៀបធាតុក្នុង card តាមជួរឈរ */
+    align-items: center; /* តម្រឹមចំកណ្តាល */
+    text-align: center;
+    width: 250px; /* កំណត់ទទឹងជាក់លាក់សម្រាប់ card */
+    float: left; /* ប្រើ float ដើម្បីដាក់ card ជាប់គ្នា */
+    margin: 10px;
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    margin: 5px 0;
+    color: #007bff;
+}
+
+.book-card .price {
+    font-weight: bold;
+    color: #dc3545; /* ពណ៌ក្រហម */
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+}
+
+/* Footer (footer) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    clear: both; /* ធានាថា footer មិនជាប់នឹង float ពី book-card */
+}
+
+/* ការកែតម្រូវសម្រាប់ book-list ដើម្បីរៀបចំ cards */
+.book-list {
+    display: flex;
+    flex-wrap: wrap; /* អនុញ្ញាតឱ្យ cards ធ្លាក់ទៅជួរថ្មី */
+    justify-content: flex-start; /* ចាប់ផ្តើមពីខាងឆ្វេង */
+    margin-left: -10px; /* កែតម្រូវចន្លោះដោយសារតែ margin របស់ card */
+    margin-right: -10px;
+}
