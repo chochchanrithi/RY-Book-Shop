@@ -9,16 +9,24 @@ body {
 
 /* Header (header) */
 header {
-    background-color: #007bff; /* ពណ៌ខៀវ */
+    background-color: #1b4a7c; /* ពណ៌ខៀវ */
     color: white;
     padding: 20px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header h1 {
     margin-bottom: 10px;
 }
-
+.text{
+    color: gray;
+    background-color: white;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+}
 .search-form input[type="search"], .search-form button {
     padding: 8px;
     border: none;
@@ -57,14 +65,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffc107; /* ពណ៌លឿងនៅពេលដាក់ម៉ៅលើ */
+    color: #9c7911; /* ពណ៌លឿងនៅពេលដាក់ម៉ៅលើ */
 }
 
 /* Main Content Wrapper (main) - ប្រើ Flexbox ដើម្បីដាក់ Section និង Aside ជាប់គ្នា */
 .content-wrapper {
     display: flex;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 0 20px;
 }
 
@@ -87,16 +95,28 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 130px;
+    height: 490px;
+    margin-right: auto;
 }
 
 .sidebar h3 {
     color: #007bff;
     margin-top: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
 }
 
 .sidebar ul {
     list-style: none;
     padding: 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .sidebar ul li a {
@@ -104,6 +124,9 @@ nav ul li a:hover {
     color: #555;
     display: block;
     padding: 5px 0;
+    display: block;
+    justify-content: center;
+    text-align: center;
 }
 
 .promotion {
