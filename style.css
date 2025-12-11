@@ -130,8 +130,8 @@ nav ul li a:hover {
 }
 
 .promotion {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px;
     background-color: #ffe4b2; /* ពណ៌លឿងស្រាល */
     border-radius: 6px;
     text-align: center;
@@ -189,12 +189,13 @@ nav ul li a:hover {
 
 /* Footer (footer) */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #7c7676;
+    color: rgb(245, 239, 239);
     text-align: center;
     padding: 15px;
     margin-top: 20px;
     clear: both; /* ធានាថា footer មិនជាប់នឹង float ពី book-card */
+    font-weight: bold;
 }
 
 /* ការកែតម្រូវសម្រាប់ book-list ដើម្បីរៀបចំ cards */
@@ -204,4 +205,5 @@ footer {
     justify-content: flex-start; /* ចាប់ផ្តើមពីខាងឆ្វេង */
     margin-left: -10px; /* កែតម្រូវចន្លោះដោយសារតែ margin របស់ card */
     margin-right: -10px;
+
 }
